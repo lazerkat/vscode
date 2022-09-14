@@ -1,0 +1,89 @@
+{
+  "editor.bracketPairColorization.enabled": false,
+  "editor.detectIndentation": false,
+    "editor.fontFamily": "'Source Code Pro', Menlo, Monaco, monospace",
+    "editor.fontSize": 13,
+    "editor.insertSpaces": true,
+    "editor.rulers": [
+      80
+    ],
+    "editor.suggestSelection": "first",
+    "editor.tabSize": 2,
+    "files.exclude": {
+      "**/.coverage": true,
+      "**/.pytest_cache": true,
+      "**/__pycache__": true,
+      ".vscode": true,
+    },
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "C_Cpp.clang_format_fallbackStyle": "Google",
+    "go.formatTool": "goimports",
+    "java.configuration.checkProjectSettingsExclusions": false,
+    "java.semanticHighlighting.enabled": true,
+    "js/ts.implicitProjectConfig.checkJs": true,
+    "python.analysis.typeCheckingMode": "strict",
+    "python.formatting.provider": "yapf",
+    "python.formatting.yapfArgs": ["--style", "{based_on_style: google, indent_width: 4}"],
+    "python.languageServer": "Pylance",
+    "python.linting.enabled": true,
+    "python.linting.pydocstyleEnabled": false,
+    "python.linting.pylintEnabled": true,
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestArgs": [
+      "--log-cli-level=DEBUG"
+    ],
+    "python.testing.unittestEnabled": false,
+    "window.closeWhenEmpty": true,
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "React Theme",
+
+    // Overrides for different kinds of files.
+    "[starlark]": {
+      "editor.formatOnSave": true,
+      "editor.rulers": [
+        100
+      ],
+      "editor.tabSize": 4,
+    },
+    "[go]": {
+      "editor.insertSpaces": false,
+      "editor.formatOnSave": true,
+      "editor.codeActionsOnSave": {
+        "source.organizeImports": true,
+      },
+      "editor.rulers": [
+        100
+      ],
+    },
+    "[html]": {
+      "editor.suggest.insertMode": "replace",
+      "editor.rulers": [100],
+    },
+    "[java]": {
+      "editor.formatOnSave": false,
+      "editor.rulers": [
+        100
+      ],
+    },
+    "[python]": {
+      "editor.formatOnSave": true,
+      "editor.rulers": [
+        80
+      ],
+      "editor.tabSize": 4,
+    },
+
+    // Commands to run on save.
+    "emeraldwalk.runonsave": {
+      "commands": [
+        {
+          "match": "\\.java$",
+          "isAsync": true,
+          "cmd": "/usr/local/bin/google-java-format --replace ${file}"
+        },
+      ]
+    },
+    "go.toolsManagement.autoUpdate": true,
+  }

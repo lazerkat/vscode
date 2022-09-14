@@ -1,0 +1,43 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "cmd+right",
+    "command": "cursorWordEndRight",
+    "when": "textInputFocus",
+  },
+  {
+    "key": "cmd+left",
+    "command": "cursorWordStartLeft",
+    "when": "textInputFocus",
+  },
+  {
+    "key": "shift+cmd+right",
+    "command": "cursorWordEndRightSelect",
+    "when": "textInputFocus",
+  },
+  {
+    "key": "shift+cmd+left",
+    "command": "cursorWordStartLeftSelect",
+    "when": "textInputFocus",
+  },
+  {
+    "key": "cmd+home",
+    "command": "cursorTop",
+    "when": "textInputFocus",
+  },
+  {
+    "key": "cmd+end",
+    "command": "cursorBottom",
+    "when": "textInputFocus",
+  },
+  {
+    "key": "shift+cmd+home",
+    "command": "cursorTopSelect",
+    "when": "textInputFocus",
+  },
+  {
+    "key": "shift+cmd+end",
+    "command": "cursorBottomSelect",
+    "when": "textInputFocus",
+  },
+]
