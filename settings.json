@@ -3,11 +3,10 @@
   "editor.detectIndentation": false,
   "editor.fontFamily": "'Source Code Pro', Menlo, Monaco, monospace",
   "editor.fontSize": 13,
+  "editor.formatOnSave": false,
   "editor.formatOnType": false,
   "editor.insertSpaces": true,
-  "editor.rulers": [
-    80
-  ],
+  "editor.rulers": [80],
   "editor.suggestSelection": "first",
   "editor.tabSize": 2,
   "files.exclude": {
@@ -27,7 +26,10 @@
   "js/ts.implicitProjectConfig.checkJs": true,
   "python.analysis.typeCheckingMode": "strict",
   "python.formatting.provider": "yapf",
-    "python.formatting.yapfArgs": ["--style", "{based_on_style: google, indent_width: 4}"],
+  "python.formatting.yapfArgs": [
+    "--style",
+    "{based_on_style: google, indent_width: 4}"
+  ],
   "python.languageServer": "Pylance",
   "python.linting.enabled": true,
   "python.linting.pydocstyleEnabled": false,
@@ -44,9 +46,7 @@
   // Overrides for different kinds of files.
   "[starlark]": {
     "editor.formatOnSave": true,
-    "editor.rulers": [
-      100
-    ],
+    "editor.rulers": [100],
     "editor.tabSize": 4,
   },
   "[go]": {
@@ -55,25 +55,19 @@
     "editor.codeActionsOnSave": {
       "source.organizeImports": true,
     },
-    "editor.rulers": [
-      100
-    ],
+    "editor.rulers": [100],
   },
   "[html]": {
     "editor.suggest.insertMode": "replace",
-      "editor.rulers": [100],
+    "editor.rulers": [100],
   },
   "[java]": {
     "editor.formatOnSave": false,
-    "editor.rulers": [
-      100
-    ],
+    "editor.rulers": [100],
   },
   "[python]": {
     "editor.formatOnSave": true,
-    "editor.rulers": [
-      80
-    ],
+    "editor.rulers": [80],
     "editor.tabSize": 4,
   },
 
